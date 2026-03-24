@@ -1,0 +1,118 @@
+import { Student, Tree, Activity } from '../types';
+
+export const mockStudents: Student[] = [
+  {
+    id: '1',
+    name: 'Emma Johnson',
+    grade: '5th Grade',
+    points: 450,
+    avatar: 'EJ',
+  },
+  {
+    id: '2',
+    name: 'Liam Smith',
+    grade: '6th Grade',
+    points: 380,
+    avatar: 'LS',
+  },
+  {
+    id: '3',
+    name: 'Sophia Davis',
+    grade: '5th Grade',
+    points: 520,
+    avatar: 'SD',
+  },
+  {
+    id: '4',
+    name: 'Noah Brown',
+    grade: '4th Grade',
+    points: 290,
+    avatar: 'NB',
+  },
+  {
+    id: '5',
+    name: 'Olivia Wilson',
+    grade: '6th Grade',
+    points: 410,
+    avatar: 'OW',
+  },
+];
+
+export const mockTrees: Tree[] = [
+  {
+    id: '1',
+    name: 'Oak Guardian',
+    species: 'Red Oak',
+    plantedBy: 'Emma Johnson',
+    plantedDate: '2025-09-15',
+    location: 'Front Garden',
+    health: 'Excellent',
+    lastWatered: '2026-03-20',
+    image: 'https://images.unsplash.com/photo-1668796521460-377bfc6bd809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvYWslMjB0cmVlJTIwbmF0dXJlfGVufDF8fHx8MTc3NDA4MDg2MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    description: 'A beautiful red oak planted during our fall tree-planting ceremony.',
+  },
+  {
+    id: '2',
+    name: 'Evergreen Hope',
+    species: 'White Pine',
+    plantedBy: 'Sophia Davis',
+    plantedDate: '2025-10-01',
+    location: 'Side Yard',
+    health: 'Good',
+    lastWatered: '2026-03-19',
+    image: 'https://images.unsplash.com/photo-1631983114220-8ffb9cb9e710?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaW5lJTIwdHJlZSUyMGdyZWVufGVufDF8fHx8MTc3NDA4MDg2MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    description: 'This pine tree represents our commitment to sustainability.',
+  },
+  {
+    id: '3',
+    name: 'Future Sprout',
+    species: 'Maple Sapling',
+    plantedBy: 'Liam Smith',
+    plantedDate: '2026-02-14',
+    location: 'Back Field',
+    health: 'Excellent',
+    lastWatered: '2026-03-21',
+    image: 'https://images.unsplash.com/photo-1678687975041-f3f1dd854210?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMHRyZWUlMjBzYXBsaW5nJTIwcGxhbnRlZHxlbnwxfHx8fDE3NzQwODA4NTl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    description: 'Our newest addition to the school garden!',
+  },
+  {
+    id: '4',
+    name: 'Wisdom Willow',
+    species: 'Weeping Willow',
+    plantedBy: 'Olivia Wilson',
+    plantedDate: '2025-08-22',
+    location: 'Pond Area',
+    health: 'Good',
+    lastWatered: '2026-03-20',
+    image: 'https://images.unsplash.com/photo-1668796521460-377bfc6bd809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvYWslMjB0cmVlJTIwbmF0dXJlfGVufDF8fHx8MTc3NDA4MDg2MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    description: 'A graceful willow that provides shade near the school pond.',
+  },
+];
+
+export const mockActivities: Activity[] = [
+  {
+    id: '1',
+    treeId: '1',
+    studentId: '1',
+    type: 'watered',
+    points: 10,
+    date: '2026-03-20',
+    notes: 'Tree looks healthy!',
+  },
+  {
+    id: '2',
+    treeId: '2',
+    studentId: '3',
+    type: 'fertilized',
+    points: 20,
+    date: '2026-03-19',
+  },
+  {
+    id: '3',
+    treeId: '3',
+    studentId: '2',
+    type: 'watered',
+    points: 10,
+    date: '2026-03-21',
+  },
+];
